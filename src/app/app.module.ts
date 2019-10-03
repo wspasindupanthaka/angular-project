@@ -9,6 +9,7 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { ErrorAlertComponent } from './error-alert/error-alert.component';
 
 import {FormsModule} from '@angular/forms';
+import { DataBindingAssignmentComponent } from './data-binding-assignment/data-binding-assignment.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {FormsModule} from '@angular/forms';
     ServerComponent,
     ServersComponent,
     SuccessAlertComponent,
-    ErrorAlertComponent
+    ErrorAlertComponent,
+    DataBindingAssignmentComponent
   ],
   imports: [
     BrowserModule,
