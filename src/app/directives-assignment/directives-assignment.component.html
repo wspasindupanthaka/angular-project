@@ -6,8 +6,8 @@
   <p *ngIf="displayParagraph">Secret Password</p>
 
 
-  <div *ngFor="let clickEvent of buttonClickEvents" [ngStyle]="{backgroundColor:getColor(clickEvent)}"
-   [ngClass]="{'white-css': clickEvent > 5 }">
+  <div *ngFor="let clickEvent of buttonClickEvents; let i = index" [ngStyle]="{backgroundColor:getColor(i)}"
+   [ngClass]="{'white-css': i > 4 }">
     {{clickEvent}}
   </div>
 </div>
